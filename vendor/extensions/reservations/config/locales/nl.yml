@@ -7,7 +7,7 @@ nl:
       admin:
         reservations:
           actions:
-            create_new: Maak een nieuwe Reservation
+            create_new: Maak een nieuwe reservering
             reorder: Wijzig de volgorde van de Reservations
             reorder_done: Klaar met het wijzingen van de volgorde van de Reservations
           records:
@@ -24,11 +24,11 @@ nl:
   activerecord:
     attributes:
       'refinery/reservations/reservation':
-        name: Name
-        sirname: Sirname
-        address: Address
-        city: City
+        name: Naam
+        sirname: Achternaam
+        address: Adres
+        city: Woonplaats
         email: Email
-        phonenumber: Phonenumber
-        startdate: Startdate
-        enddate: Enddate
+        phonenumber: Telefoon nummer
+        startdate: Begindatum verblijf
+        enddate: Einddatum verblijf
