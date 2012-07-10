@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      guestbooks:
+        title: Guestbooks
+#        article: masculino/femenino
+    guestbooks:
+      admin:
+        guestbooks:
+          actions:
+            create_new: Crear nuevo guestbook
+            reorder: Reordenar guestbooks
+            reorder_done: Reordenación de guestbooks completada
+          records:
+            title: Guestbooks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay guestbooks todavía. Pulsa en "Crear nuevo Guestbook" para crear tu primer guestbook.
+          guestbook:
+            view_live_html: Ver este guestbook como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este guestbook
+            delete: Borrar este guestbook para siempre
+      guestbooks:
+        show:
+          other: Otros guestbooks
+  activerecord:
+    attributes:
+      'refinery/guestbooks/guestbook':
+        name: Name
+        message: Message

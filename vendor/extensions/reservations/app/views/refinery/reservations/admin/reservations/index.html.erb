@@ -1,0 +1,15 @@
+<style type="text/css">
+.reservation_admin_name {
+	width: 200px;
+	font-weight: bold;
+	display:inline-block;
+}
+</style>
+
+<section id='records'>
+  <%= render 'records' %>
+</section>
+<aside id='actions'>
+  <%= render 'actions' %>
+</aside>
+<%= render '/refinery/admin/make_sortable', :tree => false if !searching? and ::Refinery::Reservations::Admin::ReservationsController.sortable? and ::Refinery::Reservations::Reservation.count > 1 %>

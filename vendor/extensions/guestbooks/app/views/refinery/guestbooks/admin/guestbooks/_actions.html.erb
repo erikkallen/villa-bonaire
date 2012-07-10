@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Guestbooks::Admin::GuestbooksController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.guestbooks_admin_guestbooks_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_guestbooks_admin_guestbook_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Guestbooks::Admin::GuestbooksController.sortable? && ::Refinery::Guestbooks::Guestbook.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Guestbooks"),
+                 refinery.guestbooks_admin_guestbooks_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Guestbooks"),
+                 refinery.guestbooks_admin_guestbooks_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

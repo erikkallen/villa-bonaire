@@ -1,0 +1,23 @@
+<% content_for :body_content_left do %>
+<%= form_for [refinery, :guestbooks, @guestbook] do |f| %>
+      <%= render :partial => "/refinery/admin/error_messages",
+                 :locals => {
+                   :object => @guestbook,
+                   :include_object_name => true
+                 } %>
+      <div class="field">
+        <%= f.required_label :name, :class => 'placeholder-fallback' %>
+        <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/guestbooks/guestbook') %>
+      </div>
+      <div class='field message_field'>
+        <%= f.required_label :message, :class => 'placeholder-fallback' %>
+        <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/guestbooks/guestbook') %>
+      </div>
+      <div class="actions">
+        <%= f.submit t('.send') %>
+      </div>
+    <% end %>
+
+<% end %>
+
+<%= render "/refinery/content_page" %>

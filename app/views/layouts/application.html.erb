@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body>
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+
+
+
+<div class="container">
+    <div class="header">
+    
+      <div id="header-image-background"><%= image_tag "header_background.png"  %></div>
+      <div id="header-image"><%= image_tag "header_background.png"  %></div>
+      <div id="header-image-foreground"><%= image_tag "header_foreground.png"  %></div>     
+        <canvas id="clock1" style="position: absolute; margin-left: 20px; margin-top:10px;" class="CoolClock:swissRail:35:noSeconds:<%= Time.zone_offset('EDT').div(3600) %>"></canvas>
+        <canvas id="clock2" style="position: absolute; margin-left: 20px; margin-top:90px;" class="CoolClock:swissRail:35:noSeconds"></canvas>
+        
+      
+    </div>
+    
+    <div class="menu">
+      <%= render '/refinery/header' -%>
+      <br style="clear:both;" />
+    </div>
+    
+    <% if flash[:notice] %>
+      <div id="the_flash"><%= flash[:notice] %><%= render :partial => 'shared/blind_effect' %></div>
+      
+    <% end %>
+    
+    <% if flash[:error] %>
+      <div id="the_flash" ><div class="error"><%= flash[:error] %><%= render :partial => 'shared/blind_effect' %></div></div>
+      
+    <% end %>
+    
+    <div class="content">
+    
+      <div class="body"><%= yield  %></div>
+      <div style="width: 100px;float:right;margin-top:-90px;">
+       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.villa-bonaire.nl%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;locale=en_US" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+        <a data-count="horizontal" class="twitter-share-button" href="http://twitter.com/share">Tweet</a>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <iframe frameborder="0" scrolling="no" src="http://www.hyves.nl/respect/button?url=www.villa-bonaire.nl" style="border: medium none; overflow:hidden; width:150px; height:21px;" allowtransparency="true"></iframe>
+      </div>
+      <br style="clear:both;" />
+    </div>
+      
+    <div class="footer">
+      sitemap | disclaimer | <%= link_to 'contact', '/contact' %>
+    </div>
+
+
+<!--
+    <div id="page_container">
+      <header id="header">
+        <%= render '/refinery/header' -%>
+      </header>
+      <section id="page">
+        <%#= yield %>
+      </section>
+      <footer>
+        <%= render '/refinery/footer' -%>
+      </footer>
+    </div>-->
+    <%= render '/refinery/javascripts' %>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      guestbooks:
+        title: Gastenboek
+    guestbooks:
+      admin:
+        guestbooks:
+          actions:
+            create_new: Maak een nieuw gastenboek bericht
+            reorder: Wijzig de volgorde van de gastenboek berichten
+            reorder_done: Klaar met het wijzingen van de volgorde van de gastenboek berichen
+          records:
+            title: Guestbooks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen gastenboek berichten. Druk op 'Maak een nieuwe gastenboek bericht' om de eerste aan te maken.
+          guestbook:
+            view_live_html: Bekijk deze pagina op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk dit gastenboek
+            delete: Verwijder dit gastenboek voor eeuwig
+      guestbooks:
+        show:
+          other: Andere gastenboek berichten
+  activerecord:
+    attributes:
+      'refinery/guestbooks/guestbook':
+        name: Name
+        message: Message
+  will_paginate:
+    previous_label: "&#8592; Vorige"
+    next_label: "Volgende &#8594;"
+    page_gap: "&hellip;"

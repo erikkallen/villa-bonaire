@@ -1,0 +1,2 @@
+<%= will_paginate @reservations if Refinery::Reservations::Admin::ReservationsController.pageable? %>
+<%= render 'sortable_list' %>

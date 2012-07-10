@@ -1,0 +1,159 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #666; }
+a:visited { color: #666; }
+
+h1{
+	color: #e36b00;	
+	font-style: italic;
+	font-family: "Rachana w01", "Trebuchet ms";
+}
+
+h3{
+	color: #e36b00;	
+	font-style: italic;
+	font-family: "Rachana w01", "Trebuchet ms";
+	font-size: 18px;	
+}
+
+.admin-menu{
+	position: absolute;
+	z-index: 10;
+	float: left;
+	height: 300px;
+	margin-bottom: -310px;
+	width: 108px;
+	padding: 5px;
+}
+
+.admin-menu a {
+	color: white;
+}
+
+#header-image-background {
+	position:absolute;
+
+	
+}
+
+#header-image {
+	position:absolute;
+	
+	
+}
+
+#header-image-foreground{
+	position:absolute;
+	
+}
+
+#clock2 {
+	height: 100px;
+	width: 100px;
+}
+
+tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet ms";}
+.indent{ margin-left: 5px; }
+
+.container{
+	margin: 0px auto;
+	margin-top: 20px;
+	width: 900px;
+	border: 1px solid rgb(200,200,200);
+	padding: 5px;
+	@include border-radius(10px);
+	@include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.05));
+}
+
+.header{
+	height: 135px;
+	z-index: 10;
+	margin-bottom: -10px;
+}
+
+.menu{
+	margin-left: -22px;	
+}
+
+.menu li{
+	text-decoration:none;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(90,90,90);
+	text-align: center;
+	height: 25px;
+	width: 108px;
+	margin-left: 5px;
+	background-color: rgb(217,255,69);
+	background-image: url('/assets/menu_item.png');
+	float: left;
+	margin-bottom: 5px;
+	padding-top: 75px;
+	 list-style-type:none;
+}
+.menu li a, .menu li a a:hover{text-decoration: none;}
+
+.body{
+	min-height: 500px;	
+	width: 663px;
+	padding: 10px;
+	float: left;
+	line-height: 1.5em;
+	border-left: 108px solid #e36b00;
+	border-right: 108px solid #e36b00;
+	background-color: rgb(255,255,179);
+}
+
+.footer{
+	text-align: right;
+	padding-right: 10px;
+	height: 17px;
+	line-height: 15px;
+	margin-top: 5px;
+	border-top: 5px solid rgb(217,255,69);
+	border-bottom: 5px solid rgb(217,255,69);	
+}
+
+#the_flash{
+	background-color: rgb(217,255,69);
+	color: black;
+	font-weight: bold;
+	border-bottom: 5px solid white;
+	height: 30px;
+	
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.error{
+	background-color: orange;
+	font-weight: bold;
+	color: black;	
+}
+
+.close_flash {
+	float:right;
+	margin-right: 5px;
+	margin-top: 7px;
+}
+
+.list_item_even{ 	background-color: rgb(245,245,245);	}
+.list_item_odd{ }
+
+table tr td input { border: 1px solid rgb(200,200,200); }
+table tr td select { border: 1px solid rgb(200,200,200);}
+table tr td textarea {border: 1px solid rgb(200,200,200);}
+

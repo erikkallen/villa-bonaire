@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      reservations:
+        title: Reservations
+    reservations:
+      admin:
+        reservations:
+          actions:
+            create_new: Maak een nieuwe Reservation
+            reorder: Wijzig de volgorde van de Reservations
+            reorder_done: Klaar met het wijzingen van de volgorde van de Reservations
+          records:
+            title: Reservations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Reservations. Druk op 'Maak een nieuwe Reservation' om de eerste aan te maken.
+          reservation:
+            view_live_html: Bekijk deze reservation op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze reservation
+            delete: Verwijder deze reservation voor eeuwig
+      reservations:
+        show:
+          other: Andere Reservations
+  activerecord:
+    attributes:
+      'refinery/reservations/reservation':
+        name: Name
+        sirname: Sirname
+        address: Address
+        city: City
+        email: Email
+        phonenumber: Phonenumber
+        startdate: Startdate
+        enddate: Enddate

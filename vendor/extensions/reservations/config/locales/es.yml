@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      reservations:
+        title: Reservations
+#        article: masculino/femenino
+    reservations:
+      admin:
+        reservations:
+          actions:
+            create_new: Crear nuevo reservation
+            reorder: Reordenar reservations
+            reorder_done: Reordenación de reservations completada
+          records:
+            title: Reservations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay reservations todavía. Pulsa en "Crear nuevo Reservation" para crear tu primer reservation.
+          reservation:
+            view_live_html: Ver este reservation como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este reservation
+            delete: Borrar este reservation para siempre
+      reservations:
+        show:
+          other: Otros reservations
+  activerecord:
+    attributes:
+      'refinery/reservations/reservation':
+        name: Name
+        sirname: Sirname
+        address: Address
+        city: City
+        email: Email
+        phonenumber: Phonenumber
+        startdate: Startdate
+        enddate: Enddate

@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      guestbooks:
+        title: Guestbooks
+    guestbooks:
+      admin:
+        guestbooks:
+          actions:
+            create_new: Add New Guestbook
+            reorder: Reorder Guestbooks
+            reorder_done: Done Reordering Guestbooks
+          records:
+            title: Guestbooks
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Guestbooks yet. Click "Add New Guestbook" to add your first guestbook.
+          guestbook:
+            view_live_html: View this guestbook live <br/><em>(opens in a new window)</em>
+            edit: Edit this guestbook
+            delete: Remove this guestbook forever
+      guestbooks:
+        show:
+          other: Other Guestbooks
+  activerecord:
+    attributes:
+      'refinery/guestbooks/guestbook':
+        name: Name
+        message: Message
+  will_paginate:
+    previous_label: "&#8592; Vorige"
+    next_label: "Volgende &#8594;"
+    page_gap: "&hellip;"

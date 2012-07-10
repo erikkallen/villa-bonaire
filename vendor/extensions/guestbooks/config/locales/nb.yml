@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      guestbooks:
+        title: Guestbooks
+    guestbooks:
+      admin:
+        guestbooks:
+          actions:
+            create_new: Lag en ny Guestbook
+            reorder: Endre rekkefølgen på Guestbooks
+            reorder_done: Ferdig å endre rekkefølgen Guestbooks
+          records:
+            title: Guestbooks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Guestbooks enda. Klikk på "Lag en ny Guestbook" for å legge til din første guestbook.
+          guestbook:
+            view_live_html: Vis hvordan denne guestbook ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne guestbook
+            delete: Fjern denne guestbook permanent
+      guestbooks:
+        show:
+          other: Andre Guestbooks
+  activerecord:
+    attributes:
+      'refinery/guestbooks/guestbook':
+        name: Name
+        message: Message

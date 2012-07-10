@@ -1,0 +1,44 @@
+<% content_for :body_content_title do %>
+  <%= @album.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <div id="big_photo">
+      <%#= link_to image_tag(@selected.try(:photo)), "#{@selected.try(:photo)}" %>
+    </div>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <div class="pikachoose">
+      <ul id="pikame" class="jcarousel-skin-pika">
+        <% @photos.each do |photo| %>
+            <li><a href="http://www.pikachoose.com">
+              <%= link_to image_tag(photo.photo), "#{photo.photo}" %></li>
+          <% end %>
+      </ul>
+    </div>
+  </aside>
+<% end %>
+
+
+
+<%= render '/refinery/content_page' %>
+<script type="text/javascript">
+
+$(document).ready(function (){  
+  $(".myFancy").fancybox();
+  var a = function(self){
+    //console.log($("#fancybox-loading"));
+    $(".fancybox").fancybox();
+
+  };
+  $("#pikame").PikaChoose({transition:[0],buildFinished:a,carousel:true,carouselOptions:{wrap:'circular'}, showCaption:false});
+
+  
+});
+
+</script>

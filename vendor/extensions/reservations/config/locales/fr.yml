@@ -1,0 +1,34 @@
+fr:
+  refinery:
+    plugins:
+      reservations:
+        title: Reservations
+    reservations:
+      admin:
+        reservations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Reservation
+            reorder: Réordonner les Reservations
+            reorder_done: Fin de réordonnancement des Reservations
+          records:
+            title: Reservations
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Reservation. Cliquer sur "Créer un(e) nouve(au/l/lle) Reservation" pour créer votre premi(er/ère) reservation.'
+          reservation:
+            view_live_html: Voir ce(t/tte) reservation <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) reservation
+            delete: Supprimer définitivement ce(t/tte) reservation
+      reservations:
+        show:
+          other: Autres Reservations
+  activerecord:
+    attributes:
+      'refinery/reservations/reservation':
+        name: Name
+        sirname: Sirname
+        address: Address
+        city: City
+        email: Email
+        phonenumber: Phonenumber
+        startdate: Startdate
+        enddate: Enddate

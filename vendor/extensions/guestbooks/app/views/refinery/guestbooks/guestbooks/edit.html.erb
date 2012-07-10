@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="guestbooks">
+    <% @guestbooks.each do |guestbook| %>
+      <li>
+        <%= link_to guestbook.name, refinery.guestbooks_guestbook_path(guestbook) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

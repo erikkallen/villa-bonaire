@@ -1,0 +1,34 @@
+en:
+  refinery:
+    plugins:
+      reservations:
+        title: Reservations
+    reservations:
+      admin:
+        reservations:
+          actions:
+            create_new: Add New Reservation
+            reorder: Reorder Reservations
+            reorder_done: Done Reordering Reservations
+          records:
+            title: Reservations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Reservations yet. Click "Add New Reservation" to add your first reservation.
+          reservation:
+            view_live_html: View this reservation live <br/><em>(opens in a new window)</em>
+            edit: Edit this reservation
+            delete: Remove this reservation forever
+      reservations:
+        show:
+          other: Other Reservations
+  activerecord:
+    attributes:
+      'refinery/reservations/reservation':
+        name: Name
+        sirname: Sirname
+        address: Address
+        city: City
+        email: Email
+        phonenumber: Phonenumber
+        startdate: Startdate
+        enddate: Enddate

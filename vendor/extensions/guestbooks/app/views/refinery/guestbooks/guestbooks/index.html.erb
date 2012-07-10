@@ -1,0 +1,32 @@
+<% content_for :body_content_left do %>
+<table>
+	<tbody>
+		<% if @guestbooks.any? %>
+	    	<% @guestbooks.each do |guestbook| %>
+	    	<tr class="<%= cycle('odd', 'even') %>">
+				<td class="reaction_date">	
+					<span class="reaction_name"><%= guestbook.name %></span><br>
+				</td>
+				<td class="reaction_text">
+					<%= guestbook.message %>
+				</td>
+			</tr>
+	    	<% end %>
+	    	
+	    <% end %>
+    </tbody>
+</table>
+<br>
+<%= will_paginate @guestbooks %>
+<br>
+<%= link_to 'Plaats een reactie', refinery.new_guestbooks_guestbook_path %>
+<% end %>
+
+
+
+<%= render '/refinery/content_page' %>
+
+
+
+	
+	

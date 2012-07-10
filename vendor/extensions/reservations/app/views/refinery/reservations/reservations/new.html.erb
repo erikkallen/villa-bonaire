@@ -1,0 +1,66 @@
+
+<% content_for :body_content_left do %>
+  <%= form_for [refinery, :reservations, @reservation] do |f| -%>
+    <%= render '/refinery/admin/error_messages',
+                :object => @reservation,
+                :include_object_name => true %>
+
+    
+    <div class='field'>
+      <%= f.label :name -%>
+      <%= f.text_field :name, :class => 'larger widest'  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :sirname -%>
+      <%= f.text_field :sirname  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :address -%>
+      <%= f.text_field :address  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :city -%>
+      <%= f.text_field :city  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :email -%>
+      <%= f.text_field :email  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :phonenumber -%>
+      <%= f.text_field :phonenumber  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :startdate -%>
+      <%= f.text_field :startdate  -%>
+
+    </div>
+    
+    <div class='field'>
+      <%= f.label :enddate -%>
+      <%= f.text_field :enddate  -%>
+
+    </div>
+    <%= f.submit %>
+  <% end -%>
+<% end -%>
+
+<%= render '/refinery/content_page' %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#reservation_startdate").datepicker({ dateFormat: 'dd-mm-yy' });
+      $("#reservation_enddate").datepicker({ dateFormat: 'dd-mm-yy' });
+    });
+  </script>

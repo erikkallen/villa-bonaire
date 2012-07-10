@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+   <ul id="albums">
+    <% @albums.each do |album| %>
+      <li>
+        <%= link_to album.title, refinery.galleries_gallery_path(album) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

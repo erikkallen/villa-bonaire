@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      guestbooks:
+        title: Guestbooks
+    guestbooks:
+      admin:
+        guestbooks:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Guestbook
+            reorder: Réordonner les Guestbooks
+            reorder_done: Fin de réordonnancement des Guestbooks
+          records:
+            title: Guestbooks
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Guestbook. Cliquer sur "Créer un(e) nouve(au/l/lle) Guestbook" pour créer votre premi(er/ère) guestbook.'
+          guestbook:
+            view_live_html: Voir ce(t/tte) guestbook <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) guestbook
+            delete: Supprimer définitivement ce(t/tte) guestbook
+      guestbooks:
+        show:
+          other: Autres Guestbooks
+  activerecord:
+    attributes:
+      'refinery/guestbooks/guestbook':
+        name: Name
+        message: Message

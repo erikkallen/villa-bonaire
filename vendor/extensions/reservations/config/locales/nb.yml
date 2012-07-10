@@ -1,0 +1,34 @@
+nb:
+  refinery:
+    plugins:
+      reservations:
+        title: Reservations
+    reservations:
+      admin:
+        reservations:
+          actions:
+            create_new: Lag en ny Reservation
+            reorder: Endre rekkefølgen på Reservations
+            reorder_done: Ferdig å endre rekkefølgen Reservations
+          records:
+            title: Reservations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Reservations enda. Klikk på "Lag en ny Reservation" for å legge til din første reservation.
+          reservation:
+            view_live_html: Vis hvordan denne reservation ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne reservation
+            delete: Fjern denne reservation permanent
+      reservations:
+        show:
+          other: Andre Reservations
+  activerecord:
+    attributes:
+      'refinery/reservations/reservation':
+        name: Name
+        sirname: Sirname
+        address: Address
+        city: City
+        email: Email
+        phonenumber: Phonenumber
+        startdate: Startdate
+        enddate: Enddate
