@@ -2,9 +2,9 @@ require "bundler/capistrano"
 
 server "dev.villa-bonaire.nl", :web, :app, :db, primary: true
 
+set :user, "deployer"
 set :application, "villa-bonaire"
 set :deploy_to, "/home/#{user}/apps/#{application}"
-set :user, "deployer"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
