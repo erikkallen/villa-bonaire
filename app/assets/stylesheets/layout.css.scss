@@ -9,6 +9,7 @@ html, body {
 	height:600px;
 	width: 100%;
 	z-index: -100;
+	overflow: hidden;
 	//background: url('bg03.jpg') no-repeat; 
 	//@include transition (all 2.0s ease-in-out);
 	//@include transition (transition-property-names((transform, color, background), moz) 1.0s ease-in 0s);
