@@ -1,0 +1,46 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
+// GO AFTER THE REQUIRES BELOW.
+//
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+
+//= require jquery.pickachoose
+//= require fancybox
+//= require_tree .
+
+$(document).ready(function() {
+  // Handler for .ready() called.
+ // alert("hello");
+
+  $('.slideshow').cycle({
+    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    , timeout: 10000
+  });/*
+  var t = 1;
+    function cycleBackground() {
+      //$("body").css({'background': 'url("<%= asset_path("bg0'+t+'.jpg") %>") no-repeat'});
+      //$("#bodyDiv").css({'background': 'url("<%= asset_path("bg0'+t+'.jpg") %>") no-repeat'});
+        //$("#bodyDiv").css({'background': '#fff'});
+        //console.log("BG set to " + 'url("<%= asset_path("bg0'+t+'.jpg") %>")');
+      //});
+      //$("#bodyDiv").fadeOut();
+      $("#bodyDiv").cycle();
+      //.css({'background': 'url("<%= asset_path("bg0'+t+'.jpg") %>") no-repeat'});
+      //$("#bodyDiv").fadeIn();
+      t++;
+      if (t == 3) t = 1;
+    }
+    //
+
+    setInterval(cycleBackground, 5000);*/
+});

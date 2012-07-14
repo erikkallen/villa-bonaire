@@ -1,9 +1,31 @@
 body { background-color: #fff; color: #333; }
 
+html, body {
+	padding:0px;
+	margin: 0px;
+}
+
+.slideshow{	
+	height:600px;
+	width: 100%;
+	z-index: -100;
+	//background: url('bg03.jpg') no-repeat; 
+	//@include transition (all 2.0s ease-in-out);
+	//@include transition (transition-property-names((transform, color, background), moz) 1.0s ease-in 0s);
+	// transition: background-image 2s linear;
+    //-moz-transition: background-image 2s linear; /* Firefox 4 */
+    //-webkit-transition: background-image 2s linear; /* Safari and Chrome */
+    //-o-transition: background-image 2s linear; /* Opera */
+    //-ms-transition: background-image 2s linear; 
+}
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+}
+
+.hidden {
+	display: none;
 }
 
 pre {
@@ -28,37 +50,6 @@ h3{
 	font-size: 18px;	
 }
 
-.admin-menu{
-	position: absolute;
-	z-index: 10;
-	float: left;
-	height: 300px;
-	margin-bottom: -310px;
-	width: 108px;
-	padding: 5px;
-}
-
-.admin-menu a {
-	color: white;
-}
-
-#header-image-background {
-	position:absolute;
-
-	
-}
-
-#header-image {
-	position:absolute;
-	
-	
-}
-
-#header-image-foreground{
-	position:absolute;
-	
-}
-
 #clock2 {
 	height: 100px;
 	width: 100px;
@@ -68,66 +59,94 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 .indent{ margin-left: 5px; }
 
 .container{
+	//border: 1px solid green;
 	margin: 0px auto;
-	margin-top: 20px;
-	width: 900px;
-	border: 1px solid rgb(200,200,200);
-	padding: 5px;
-	@include border-radius(10px);
-	@include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.05));
+	margin-top: -600px;
+	width: 912px;
+	//border: 1px solid rgb(200,200,200);
+	//padding: 10px;
+	
+	//@include border-radius(10px);
+	//@include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.05));
 }
 
 .header{
-	height: 135px;
-	z-index: 10;
-	margin-bottom: -10px;
-}
-
-.menu{
-	margin-left: -22px;	
-}
-
-.menu li{
-	text-decoration:none;
-	font-size: 14px;
-	font-weight: bold;
-	color: rgb(90,90,90);
-	text-align: center;
-	height: 25px;
-	width: 108px;
-	margin-left: 5px;
-	background-color: rgb(217,255,69);
-	background-image: url('/assets/menu_item.png');
-	float: left;
-	margin-bottom: 5px;
-	padding-top: 75px;
-	 list-style-type:none;
+	background: url('header-next.png') no-repeat;
+	//border: 1px solid red;
+	height: 49px;
+	padding-top: 150px;
+	.menu{
+		//border: 1px solid purple;
+		height: 30px;
+		background: none;
+		//margin-top: 50px;
+		li{
+			text-decoration:none;
+			font-size: 14px;
+			font-weight: bold;
+			color: #ffffff;
+			text-align: center;
+			//height: 25px;
+			width: 108px;
+			margin-left: 5px;
+			display: inline-block;
+			//margin-bottom: 5px;
+			//padding-top: 75px;
+			list-style-type:none;
+			a{
+				color: #ffffff;
+			}
+			a:hover {
+				text-shadow: 0px 0px 4px #ffffff;
+			}
+		}
+	}
 }
 .menu li a, .menu li a a:hover{text-decoration: none;}
 
+.menu li.selected {
+	text-shadow: 0px 0px 4px #ffffff;
+}
+
+.content {
+	//border: 1px solid blue;
+	background-image: url('body-bg-end.png'), url('body-bg.png');
+	background-repeat: no-repeat,repeat-y;
+	background-position: bottom center,0px 100px;
+	margin-top: -16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: -50px;
+	min-height: 500px;
+}
+
+
+
 .body{
 	min-height: 500px;	
-	width: 663px;
-	padding: 10px;
-	float: left;
+	//width: 663px;
+	//padding: 10px;
+	//float: left;
 	line-height: 1.5em;
-	border-left: 108px solid #e36b00;
-	border-right: 108px solid #e36b00;
-	background-color: rgb(255,255,179);
+	//border-left: 108px solid #e36b00;
+	//border-right: 108px solid #e36b00;
+	//background-color: rgb(255,255,179);
 }
 
 .footer{
-	text-align: right;
-	padding-right: 10px;
+	text-align: center;
+
+	//padding-right: 10px;
 	height: 17px;
 	line-height: 15px;
-	margin-top: 5px;
-	border-top: 5px solid rgb(217,255,69);
-	border-bottom: 5px solid rgb(217,255,69);	
+	//margin-top: 5px;
+	//border-top: 5px solid rgb(217,255,69);
+	//border-bottom: 5px solid rgb(217,255,69);	
 }
 
 #the_flash{
-	background-color: rgb(217,255,69);
+	//background-color: rgb(217,255,69);
+	background: url('body-bg.png') repeat-y;
 	color: black;
 	font-weight: bold;
 	border-bottom: 5px solid white;
@@ -145,7 +164,7 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 }
 
 .close_flash {
-	float:right;
+	//float:right;
 	margin-right: 5px;
 	margin-top: 7px;
 }
@@ -157,3 +176,53 @@ table tr td input { border: 1px solid rgb(200,200,200); }
 table tr td select { border: 1px solid rgb(200,200,200);}
 table tr td textarea {border: 1px solid rgb(200,200,200);}
 
+
+
+
+
+
+
+
+
+.actions input[type="submit"], .button {
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+
+
+   -moz-border-radius: 16px;
+  -moz-box-shadow: #949494 0px 0px 5px;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 16px;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.5s ease;
+  background-color: #ffce8f;
+  background-image: -moz-linear-gradient(90deg, #fe9916, #ffce8f);
+  background-image: -ms-linear-gradient(90deg, #fe9916, #ffce8f);
+  background-image: -o-linear-gradient(90deg, #fe9916, #ffce8f);
+  background-image: -webkit-linear-gradient(90deg, #fe9916, #ffce8f);
+  background-image: linear-gradient(90deg, #fe9916, #ffce8f);
+  border-radius: 16px;
+  border: 2px solid #f68e09;
+  box-shadow: #949494 0px 0px 5px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  margin: auto;
+  text-decoration: none;
+  text-shadow: #424242 1px 1px 5px;
+  transition: all 0.5s ease;
+}
+.actions input[type="submit"]:hover,.button:hover {
+	cursor: pointer;
+  background-color: #fe9916;
+  background-image: -moz-linear-gradient(90deg, #ffce8f, #fe9916);
+  background-image: -ms-linear-gradient(90deg, #ffce8f, #fe9916);
+  background-image: -o-linear-gradient(90deg, #ffce8f, #fe9916);
+  background-image: -webkit-linear-gradient(90deg, #ffce8f, #fe9916);
+  background-image: linear-gradient(90deg, #ffce8f, #fe9916);
+}
