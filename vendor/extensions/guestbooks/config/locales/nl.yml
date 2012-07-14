@@ -21,6 +21,7 @@ nl:
       guestbooks:
         show:
           other: Andere gastenboek berichten
+  new_message: Plaats een bericht
   activerecord:
     attributes:
       'refinery/guestbooks/guestbook':

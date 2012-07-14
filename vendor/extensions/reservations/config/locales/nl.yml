@@ -2,25 +2,26 @@ nl:
   refinery:
     plugins:
       reservations:
-        title: Reservations
+        title: Reserveren
     reservations:
       admin:
         reservations:
           actions:
             create_new: Maak een nieuwe reservering
-            reorder: Wijzig de volgorde van de Reservations
-            reorder_done: Klaar met het wijzingen van de volgorde van de Reservations
+            reorder: Wijzig de volgorde van de reserveringen
+            reorder_done: Klaar met het wijzingen van de volgorde van de reserveringen
           records:
-            title: Reservations
+            title: Reserveringen
             sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-            no_items_yet: Er zijn nog geen Reservations. Druk op 'Maak een nieuwe Reservation' om de eerste aan te maken.
+            no_items_yet: Er zijn nog geen reserveringen. Druk op 'Maak een nieuwe reservering aan' om de eerste aan te maken.
           reservation:
-            view_live_html: Bekijk deze reservation op de website <br/><em>(opent een nieuw venster)</em>
+            view_live_html: Bekijk deze reservering op de website <br/><em>(opent een nieuw venster)</em>
             edit: Bewerk deze reservation
-            delete: Verwijder deze reservation voor eeuwig
+            delete: Verwijder deze reservering voor eeuwig
       reservations:
         show:
-          other: Andere Reservations
+          other: Andere reservering
+  submit: Reservering plaatsen
   activerecord:
     attributes:
       'refinery/reservations/reservation':

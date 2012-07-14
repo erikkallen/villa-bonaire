@@ -19,7 +19,7 @@
 <br>
 <%= will_paginate @guestbooks %>
 <br>
-<%= link_to 'Plaats een reactie', refinery.new_guestbooks_guestbook_path %>
+<%= link_to t(:new_message), refinery.new_guestbooks_guestbook_path, class: 'button' %>
 <% end %>
 
 

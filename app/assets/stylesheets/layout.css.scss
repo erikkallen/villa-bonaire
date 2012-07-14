@@ -76,6 +76,7 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 	//border: 1px solid red;
 	height: 49px;
 	padding-top: 150px;
+
 	.menu{
 		//border: 1px solid purple;
 		height: 30px;
@@ -88,8 +89,8 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 			color: #ffffff;
 			text-align: center;
 			//height: 25px;
-			width: 108px;
-			margin-left: 5px;
+			width: 90px;
+			margin-left: 7px;
 			display: inline-block;
 			//margin-bottom: 5px;
 			//padding-top: 75px;
@@ -210,7 +211,7 @@ table tr td textarea {border: 1px solid rgb(200,200,200);}
   border-radius: 16px;
   border: 2px solid #f68e09;
   box-shadow: #949494 0px 0px 5px;
-  color: #ffffff;
+  color: #ffffff !important;
   display: inline-block;
   font-size: 1em;
   margin: auto;
