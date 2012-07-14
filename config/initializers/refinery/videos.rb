@@ -1,4 +1,4 @@
-#Refinery::Videos.configure do |config|
+Refinery::Videos.configure do |config|
     #Configures the maximum allowed upload size (in bytes) for an video file
     #config.max_file_size = 524288000
 
@@ -17,4 +17,4 @@
     # config.datastore_root_path = /Users/erikkallen/Sites/villa-bonaire/public/system/refinery/videos
     # config.trust_file_extensions = false
 
-#end
+end
