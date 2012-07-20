@@ -2,7 +2,7 @@ require 'picasa'
 module Refinery
   module Galleries
     class PhotoAlbum
-		@@user = "edeuxk"
+		@@user = "villabonaire"
 
      	def self.all
      		Picasa.albums(:google_user => @@user).collect{|a|Hashit.new a}
