@@ -2,7 +2,8 @@
    <ul id="albums">
     <% @albums.each do |album| %>
       <li>
-        <%= link_to album.title, refinery.galleries_gallery_path(album) %>
+        <%= link_to image_tag(album.thumbnail), refinery.galleries_gallery_path(album) %>
+        <div><%= link_to album.title, refinery.galleries_gallery_path(album) %></div>
       </li>
     <% end %>
   </ul>

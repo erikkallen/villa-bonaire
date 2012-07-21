@@ -1,4 +1,4 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #FFFFB3; color: #333; }
 
 html, body {
 	padding:0px;
@@ -112,10 +112,10 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 
 .content {
 	//border: 1px solid blue;
-	background-image: url('body-bg-end.png'), url('body-bg.png');
+	background-image: url('background-end.png'), url('background.png');
 	background-repeat: no-repeat,repeat-y;
 	background-position: bottom center,0px 100px;
-	margin-top: -16px;
+	margin-top: -17px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: -50px;

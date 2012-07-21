@@ -2,10 +2,12 @@ require 'picasa'
 module Refinery
   module Galleries
     class PhotoAlbum
-		@@user = "villabonaire"
+		@@user = Refinery::Galleries::Setting.username
 
      	def self.all
-     		Picasa.albums(:google_user => @@user).collect{|a|Hashit.new a}
+     		albums = Picasa.albums(:google_user => @@user).collect{|a|Hashit.new a unless a[:title]=="Profile Photos"}.compact
+     		#binding.pry
+     		albums
      	end
 
      	def self.method_missing(method_id, *arguments)
