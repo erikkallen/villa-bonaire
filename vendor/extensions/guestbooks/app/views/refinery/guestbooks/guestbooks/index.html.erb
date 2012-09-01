@@ -8,7 +8,7 @@
 					<span class="reaction_name"><%= guestbook.name %></span><br>
 				</td>
 				<td class="reaction_text">
-					<%= guestbook.message %>
+					<%= sanitize guestbook.message, :tags => %w(p div), :attributes => %w() %>
 				</td>
 			</tr>
 	    	<% end %>
