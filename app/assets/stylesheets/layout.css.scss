@@ -71,6 +71,18 @@ tt{ color: #e36b00; font-weight: bold; font-size: 16px; font-family: "Trebuchet 
 	//@include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.05));
 }
 
+#clocks {
+	position: absolute;
+	left: 640px;
+	top: 10px;
+	#nlclock {
+		background-image: url('nl-clock.png');
+	}
+	#sclock {
+		background-image: url('bonaire-clock.png');
+	}
+}
+
 .header{
 	background: url('header-next.png') no-repeat;
 	//border: 1px solid red;

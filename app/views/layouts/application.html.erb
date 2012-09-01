@@ -5,8 +5,8 @@
   <body>
     <div class="slideshow">
       <!-- preload images -->
-<%= image_tag 'bg01.jpg', class: '' %>
-<%= image_tag 'bg02.jpg', class: '' %>
+<%= image_tag 'bg03.jpg', class: '' %>
+<%= image_tag 'bg03.jpg', class: '' %>
 <%= image_tag 'bg03.jpg', class: '' %>
     </div>
     <%#= site_bar -%>
@@ -14,6 +14,10 @@
 
 
 <div class="container">
+  <div id="clocks">
+    <canvas id="nlclock" class="CoolClock:dutch:50::2"></canvas>
+    <canvas id="sclock" class="CoolClock:dutch:50::-2"></canvas>
+  </div>
     <div class="header">     
       <%= render '/refinery/header' -%>
     </div>

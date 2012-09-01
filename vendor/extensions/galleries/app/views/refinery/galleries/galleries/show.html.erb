@@ -15,8 +15,11 @@
     <div class="pikachoose">
       <ul id="pikame" class="jcarousel-skin-pika">
         <% @photos.each do |photo| %>
-            <li><a href="http://www.pikachoose.com">
-              <%= link_to image_tag(photo.photo), "#{photo.photo}" %></li>
+            <li>
+              <%= link_to image_tag(photo.photo), "#{photo.photo}" %>
+              <span><%= photo.title %></span>
+            </li>
+            
           <% end %>
       </ul>
     </div>
@@ -35,7 +38,7 @@ $(document).ready(function (){
     $(".fancybox").fancybox();
 
   };
-  $("#pikame").PikaChoose({transition:[0],buildFinished:a,carousel:true,carouselOptions:{wrap:'circular'}, showCaption:false});
+  $("#pikame").PikaChoose({transition:[0],buildFinished:a,carousel:true,carouselOptions:{wrap:'circular'}, showCaption:true});
 
   
 });
