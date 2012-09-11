@@ -9,7 +9,7 @@ module Refinery
       validates :name, :presence => true
       validates_presence_of :name, :sirname,:email,:address, :city, :phonenumber, :startdate, :enddate
       validates :email, :format=> { :with =>  /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i }
-      validates_date :startdate, :enddate
+      #validates_date :startdate, :enddate
 
       def full_name
       	"#{name.capitalize} #{sirname.capitalize}"
