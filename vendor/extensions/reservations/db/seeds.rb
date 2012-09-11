@@ -15,7 +15,7 @@ if defined?(::Refinery::Page)
       :title => 'Reservations',
       :link_url => url,
       :deletable => false,
-      :menu_match => "^#{url}(\/|\/.+?|)$"
+      :menu_match => "^#{url}(\/|\/.+?|)\/new$"
     )
     Refinery::Pages.default_parts.each_with_index do |default_page_part, index|
       page.parts.create(:title => default_page_part, :body => nil, :position => index)
