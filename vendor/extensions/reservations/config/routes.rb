@@ -2,7 +2,9 @@ Refinery::Core::Engine.routes.append do
 
   # Frontend routes
   namespace :reservations do
-    resources :reservations, :path => '', :only => [:new,:create]
+    resources :reservations, :path => '', :only => [:new,:create] do
+      get :thank_you, :on => :collection
+    end
   end
 
   # Admin routes
