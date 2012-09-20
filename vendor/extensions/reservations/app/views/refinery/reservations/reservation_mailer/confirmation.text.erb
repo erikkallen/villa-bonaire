@@ -1,6 +1,15 @@
-Er is een reservering geplaatst door: <%= "#{@reservation.name} #{@reservation.sirname}" %>
+Geachte  <%= "#{@reservation.name} #{@reservation.sirname}" %>,
+
+U heeft een reservering geplaatst met de volgende gegevens:
+
 Email: <%= "#{@reservation.email}" %>
 Adres: <%= "#{@reservation.address}" %>
-Woonsplaats: <%= "#{@reservation.city}" %>
+Woonplaats: <%= "#{@reservation.city}" %>
 Tel: <%= "#{@reservation.phonenumber}" %>
 Voor de periode <%= "#{@reservation.time_period}" %>
+
+U hoort zo snel mogelijk of de door u aangevraagde periode nog beschikbaar is.
+
+Met vriendelijke groet,
+
+Jos en Monique Sikkema
