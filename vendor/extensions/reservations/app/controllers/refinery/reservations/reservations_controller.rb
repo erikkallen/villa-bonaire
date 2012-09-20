@@ -16,7 +16,7 @@ module Refinery
         @page = ::Refinery::Page.find_by_link_url("/reservations/thank_you")
         #binding.pry
         present(@page)
-        render text: "Bedankt voor u reservering", layout: "application"
+        render text: "Bedankt voor uw reservering", layout: "application"
       end
 
       def create
