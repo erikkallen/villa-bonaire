@@ -19,13 +19,20 @@ module Refinery
       end
 
       def create
-         @guestbook = Guestbook.new(params[:guestbook])
+        # Spam control
+        #binding.pry
+        if params[:guestbook][:message].empty?
+           params[:guestbook][:message] = params[:guestbook][:message2]
+           @guestbook = Guestbook.new(params[:guestbook])
 
-        if @guestbook.save
+          if @guestbook.save
 
-          redirect_to refinery.guestbooks_guestbooks_path
+            redirect_to refinery.guestbooks_guestbooks_path
+          else
+            render :action => 'new'
+          end
         else
-          render :action => 'new'
+          redirect_to refinery.guestbooks_guestbooks_path
         end
       end
 

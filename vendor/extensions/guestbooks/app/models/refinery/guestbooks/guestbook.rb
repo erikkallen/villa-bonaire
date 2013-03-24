@@ -9,7 +9,15 @@ module Refinery
       validates :message, :presence => true
             
       default_scope :order => 'created_at DESC'
-      self.per_page = 5  
+      self.per_page = 5
+      
+      def message2
+        
+      end
+      
+      def message2=(bla)
+        
+      end
     end
   end
 end

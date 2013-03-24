@@ -11,7 +11,8 @@
       </div>
       <div class='field message_field'>
         <%= f.required_label :message, :class => 'placeholder-fallback' %>
-        <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/guestbooks/guestbook') %>
+        <%= f.text_area :message2, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/guestbooks/guestbook') %>
+		<%= f.text_area :message, :rows => 8, :style => 'display:none;' %>
       </div>
       <div class="actions">
         <%= f.submit t('.send') %>
