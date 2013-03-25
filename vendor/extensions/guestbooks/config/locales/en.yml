@@ -21,6 +21,8 @@ en:
       guestbooks:
         show:
           other: Other Guestbooks
+        new:
+          send: Plaats bericht
   activerecord:
     attributes:
       'refinery/guestbooks/guestbook':
