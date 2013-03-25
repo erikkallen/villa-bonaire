@@ -25,8 +25,8 @@ nl:
   activerecord:
     attributes:
       'refinery/guestbooks/guestbook':
-        name: Name
-        message: Message
+        name: Naam
+        message: Bericht
   will_paginate:
     previous_label: "&#8592; Vorige"
     next_label: "Volgende &#8594;"
